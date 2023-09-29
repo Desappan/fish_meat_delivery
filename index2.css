@@ -1,0 +1,769 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:sans-serif;
+}
+.WebsiteContainer{
+    min-height: 600px;
+    width: 100%;
+    background-color: cadetblue;
+    /* background-image: url(./top-view-simple-notepad-with-eggs-flour-jelly-different-nuts-white-nut-sugar-color-pie-photo-dough-fruit-sweet-cake.jpg);
+     */
+}
+.FirstWebPage{
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(15, 15, 15);
+    /* background-image: url(./fish12.webp) ; */
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position:center;
+    background-size: cover;    
+    opacity: 0.9;
+}
+nav{
+    width: 100%;
+    /* background-color: coral; */
+}
+.NavMovingText{
+    text-align: center;
+    background-color:gray;
+    padding: 5PX 10PX;
+    color: white;
+    
+}
+.NavMovingText{
+    /* float: left; */
+    width: 100%;
+}
+.Nav{
+        height: 100vh;
+        width: 100%;
+        background-color: darkcyan;  
+}
+.NavLogo{
+    /* display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: aquamarine; */
+
+    
+    background-color: aquamarine ;
+    /* background-color: #FFC324; */
+    padding: 10px;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+.NavLogoMenu{
+display: flex;
+align-items: center;
+ justify-content: space-between;
+gap: 50px;
+transition: all 0.5s;
+}
+
+.NavLogo input{
+    display: none;
+}
+.NavLogo img{
+    height: 60px;
+    width: 200px;
+}
+
+.menuicon{
+    display: none !important;
+    color: white;
+}
+.NavLogoMenu a{
+    
+    /* text-decoration: none;
+    padding: 5px 10px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    color: rgb(12, 12, 12); */
+    text-decoration: none;
+    padding: 5px 0px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    color: rgb(8, 8, 8);
+     /* ani */
+     position: relative;
+     /* gap: 60px; */
+     transition: 0.2s linear; 
+}
+
+.NavLogoMenu a::after{
+    content: "";
+    position:absolute ;
+    left: 0;
+    bottom: -5px;
+    width: 0%;
+    height: 2px;
+    background-color: #FFC324;
+    transition: 0.5s linear;
+
+}
+a:hover:after{
+    width: 100%;
+}
+
+a:hover{
+    color: rgb(250, 6, 209);
+    /* color: #FFC324; */
+    /* background-color: rgb(4, 0, 255);     */
+}
+
+a:hover{
+    /* color: rgb(252, 250, 250); */
+    /* background-color: rgb(4, 0, 255);     */
+}
+.NavLogoMenu a i{
+    padding-right: 10px;
+
+}
+.NavLogoMenu > i{
+    font-size: 30px;
+
+}
+input:checked ~ .NavLogoMenu{
+    /* background-color: rgb(255, 251, 0); */
+    left: 0;
+}
+
+.Crab h3{
+    padding-left: 10px;
+}
+.FirstWebPageLastDiv {
+   
+   color: #fff;
+   display: flex;
+   padding-left: 100px;   
+}
+.FirstWebPageContent{
+    height: 70vh;
+    width: 44%;
+    padding-top: 70px;   
+}
+
+/* .FirstWebPageContent h1{
+    font-family:Open Sans;
+} */
+.FPC0{
+    font-size: 50px;
+    text-shadow:black 1px 1px  ;
+}
+.FPC00{
+    font-size: 30px;
+    text-shadow:black 1px 1px ;
+}
+.FPC5{
+    padding-bottom: 20px;
+    text-shadow:black 1px 1px ;
+    padding-top:20px;
+}
+.FirstWebPageLastDiv button{
+    padding: 10px 20px;
+    background-color:rgb(73, 141, 73);
+    /* background-color: #FFC324; */
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border: 1px solid rgb(10, 10, 10);
+    
+}
+.FirstWebPageImg{
+    width: 50%;
+    box-shadow: 100px;
+}
+.FPC{
+    text-shadow: 40px black;
+}
+
+
+@media screen and (max-width:800px) {
+    .NavLogoMenu{
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        flex-direction: column;
+        background-color: rgb(5, 216, 253);
+        top: 86px;
+        left: -100%;
+        justify-content: start;
+        padding-top: 0px;
+    }
+
+    .menuicon{
+        display:block !important;
+        
+    }
+    .WebsiteContainer{
+        min-height: 531px;
+
+    }
+    .FirstWebPageContent {
+        
+        width: 100%;
+    }
+    .FPC0 {
+        font-size: 35px;
+        
+    }
+    .FPC00 {
+        font-size: 25px;
+
+    }
+    .FirstWebPageLastDiv {
+        
+        padding-left: 10px;
+    }
+    .FirstWebPageContent {
+        
+        padding-top: 30px;
+    }
+    .FirstWebPageLastDiv button {
+        
+        font-size: 15px;
+        margin-bottom: 10px;
+        border: 2px solid rgb(73, 141, 73);
+        
+    }
+    .FPC00 {
+        font-size: 24px;
+    }
+    .FPC00{
+        text-shadow:black 1px 1px ;
+    }
+    .FPC0 {
+        text-shadow:black 1px 1px ;
+       
+    }
+    .FPC5 {
+        text-shadow:black 1px 1px ;
+        padding-top: 20px;
+    }
+    .NavLogo h1{
+        font-size: 20px;
+    }
+    .WebsiteContainer{
+        overflow-x: hidden;
+    }
+    
+}
+
+@media screen and (min-width:800px) and (max-width:1200px) {
+
+    .FirstWebPageContent {
+        
+        width: 64%;
+        padding-top: 20px;
+    }
+
+}
+
+
+.NavTypes{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(126, 117, 117, 0.678);
+    border-radius: 10px;
+    padding: 10px 20px;
+    
+}
+.NavTypes img{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+
+}
+
+.NavTypes div{
+    /* background-color: #AD1702; */
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.NavTypes div:hover{
+    background-color: #FFC324;
+    border-radius: 20px;
+
+}
+.NavTypes .fish{
+    background-color: #FFC324;
+    border-radius: 20px;
+    padding: 0px 5px 0px  0px;
+
+}
+
+.NavTypes div h3{
+    padding: 0px 10px 0px 10px;
+}
+
+
+.subscribe{
+    background-attachment: fixed;
+    /* height: 300px; */
+    background-image:url(./seafish_bak.webp);
+    color: rgb(252, 250, 250);
+    text-align: center;
+    text-shadow:black 1px 1px ;
+    
+    /* opacity: 0.7; */
+    /* position: relative; */
+    /* z-index: 9; */
+    
+
+}
+
+.subscribe div{
+    padding: 100px;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    text-align: center;
+    font-size: 40px;
+    color: white;
+}
+.subscribe div span,a{
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+
+}
+.subscribe div span{
+    color: #04e0fd;
+
+}
+
+
+
+
+
+/***************************** third web page ******************/
+
+.ThirdWebPage{
+    background-color:#E6E6E6;
+    width: 100%;
+    padding-top: 30px;
+    /* height: 100vh; */
+   }
+   .ThirdWebPageHoleDiv{
+    padding-bottom: 20px;
+   }
+   .top{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 10px;
+    
+   }
+   .top h1{
+    padding-top: 20px;
+    padding-bottom: 10px;
+    color: rgb(10, 10, 10);
+    text-align: center;
+   }
+   .top img{
+    padding-bottom: 20px;
+   }
+  
+   hr{
+    border: 1px solid orangered; 
+   }
+   .BestFish{
+    /* background-color: #FFC324; */
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    /* flex-wrap: wrap; */
+   }
+   .fishmaathi img{
+    height: 300px;
+    width: 363px;
+
+   }
+   .fishmaathi{
+    /* border: 2px solid black; */
+    /* width: 100%; */
+    background-color: white;
+    border-radius: 5px  5px 0px 5px;
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+
+   }
+   .imgcontant{
+    background-color: white;
+    width: 360px;
+    padding: 20px;
+    position: relative;
+   }
+   .imgcontant h2{
+    font-size: 22px;
+    font-family: 'Poppins';
+    font-weight: bold;
+   }
+.heartone{
+    color: rgb(2, 2, 2);
+    /* position: relative; */
+    position: absolute;
+    top: -35px;
+    left:290px;
+    box-shadow: 0 60px 80px rgba(0,0,0,0.60), 0 45px 26px rgba(0,0,0,0.14);
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+}
+.imgcontant .heartone:hover{
+    background-color: #FFC324;
+    transform: translate(10px ,10px);
+} 
+.amountcontant{
+    padding-top: 40px;
+    
+}
+
+
+.amountone .ruppes{
+    font-size: 30px;
+    font-weight: bold;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-right: 5px;
+    color: #AD1702;
+    font-weight: bold;
+}
+
+.amountone {
+    padding-bottom: 10px;
+   
+}
+.amountone button{
+    border: 2px solid #FFC324;
+    color: #FFC324;
+    background-color: white;
+    padding: 5px 10px;
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 5px;
+    padding-right: 5px;
+}
+
+
+.discount{
+    color: gray;
+    padding-right: 5px;
+    font-size: 12px;
+}
+
+.amounttwo{
+    padding-bottom: 10px;
+}
+.amounttwo button{
+    background-color: rgb(156, 153, 153,0.3);
+    padding: 5px 5px;
+    border: 2px solid rgb(156, 153, 153,0.3);
+    border-radius: 5px;
+    font-weight: bold;
+
+}
+.cart{
+    padding: 10px 106px;
+    font-size: 19px;
+    background:#FFC324;
+    border: 2px solid #FFC324 ;
+    font-family:'Poppins';
+    font-weight:bold;
+    border-radius: 5px;
+    cursor: pointer;
+    /* position: relative; */
+    /* overflow: hidden; */
+    /* background: transparent; */
+}
+.cart::before {
+    /* content: ""; */
+    /* position: absolute; */
+    /* top:0; */
+    /* left: 0; */
+    /* z-index: -2; */
+    /* width: 100%; */
+    /* height: 100%; */
+    /* background-color: #FFC324; */
+    /* transition:  0.5s all ease-in-out; */
+    /* opacity: 0.5; */
+    /* color: #E6E6E6; */
+}
+
+.cart1::before {
+    /* height: 0; */
+
+}
+.cart:hover::before {
+    /* top: unset; */
+    /* bottom: 0; */
+    /* height: 100%; */
+}
+/* hover cart */
+.cart:hover{
+    background-color: black;
+    color: white;
+    border: 2px solid black ;
+   
+}
+
+@media screen and (max-width:800px) {
+.BestFish{
+    width: 100%;
+        /* flex-direction: column; */
+        padding: 0px;
+        /* display: inline; */
+        /* display: grid; */
+        /* grid-template-columns: auto auto;  */
+        flex-wrap: wrap;
+        gap:20px;
+       }
+       .fishmaathi{
+       /* display: inline; */
+        /* width: 100%; */
+       }
+       .fishmaathi img {
+       
+        width: 320px; 
+        /* display: inline;    */
+        /* width: 57%; */
+    } 
+    .heartone {
+        left: 250px;
+        /* display: inline; */
+
+    }
+    .top img {
+       
+        width: 200px;
+    }
+    .imgcontant {
+        width: 100%;
+        /* display: inline; */
+        padding: 0px;
+        /* flex-wrap: wrap; */
+        
+    }
+    .amountone .ruppes {
+        padding-left: 10px;
+        /* display: inline; */
+
+    }
+    .imgcontant h2{
+        padding-left: 10px;
+        
+    }
+    .amounttwo{
+        font-size: 15px;
+        padding-left: 10px;
+    }
+
+    .amountcontant{
+        /* display: inline; */
+    }
+
+    .ThirdWebPageHoleDiv{
+        width: 100%;
+        /* flex-wrap: wrap; */
+    }
+    
+
+    /* .amountcontant {
+        overflow-x: hidden;
+    } */
+
+}
+
+@media screen and (min-width: 800px) and (max-width:1200px) {
+.BestFish {
+    display: grid; 
+    grid-template-columns: auto auto;
+
+
+}
+
+
+}
+
+
+.seventh_web_page{
+    background-color: rgb(207, 198, 198);
+    /* padding-bottom: 50px; */
+    
+   
+}
+
+
+/********************************* footer ******************************/
+footer{
+    background-color: white;
+}
+
+.img_contant {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.img_contant h3{
+    width: 60%;
+    font-size: 15px;
+}
+.img_contant h1{
+    padding-right: 90px;
+    padding-bottom: 20px;
+    font-size: 25px;
+}
+.last_img_div{
+    display: flex;
+    justify-content:space-evenly ;
+    align-items:center;
+    padding-left: 50px;
+    padding-top: 30px;
+    /* flex-wrap: wrap; */
+}
+.img_div{
+    display: flex;
+    /* flex-wrap: wrap; */
+    gap: 20px;
+    padding-left: 50px;
+    /* padding-top: 30px; */
+}
+.img_div h5{
+    padding-left: 10px;
+
+}
+
+/**************************** footer contant**************************888 */
+
+.my_account {
+    width: 250px;
+}
+
+.my_account h1 {
+    font-size: 20px;
+}
+.my_account h3 {
+    font-size: 15px;
+}
+.footer_contant{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+.my_account2  h3{
+    padding: 10px 0px;
+}
+h3 i{
+    padding-right: 15px;
+    font-size: 10px;
+}
+.address h2{
+    font-size: 20px;
+}
+.address h3{
+    padding: 10px 0px 30px 0px;
+    font-size: 16px;
+   
+}
+.my_account2 hr{
+    color: gray;
+    border: 1px solid gray;
+}
+.social_media {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+/* .social_media i:hover{
+    background-color: #fb0404;
+    border: ;
+
+} */
+.copy_right {
+    padding: 30px 0px 20px 0px;
+   text-align: center;
+}
+
+.copy_right h2{
+    padding-top: 20px;
+    font-size: 15px;
+}
+.copy_right hr{
+    border: 1px solid gray;
+
+}
+
+/************************* footer responsive****************** */
+@media screen and (max-width:800px) {
+.last_img_div {
+   
+     flex-wrap: wrap
+}
+
+.img_div {
+   
+    flex-wrap: wrap;
+   
+}
+.img_contant h1 {
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+.img_contant h3 {
+    width: 100%;
+}
+.footer_contant {
+    
+    padding-top: 30px;
+}
+}
+
+@media screen and (min-width:800px) and (max-width:1200px) {
+.img_contant h1 {
+   
+    padding-left: 100px;
+}
+
+}
+
+ul li::before{
+    background-color: linear-gradient(45deg,var(--i),var(--j));
+    border-radius: 60px;
+    content: "";
+    inset: 0;
+    opacity: 0;
+    position: absolute;
+    transition: 0.5s;
+}
+ul li .text{
+    color: #ffffff;
+    font-size: 1.25rem;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    transform: scale(0);
+    transition-delay: 0s;
+    transition: 0.5s;
+}
