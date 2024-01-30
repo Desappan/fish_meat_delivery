@@ -1,0 +1,169 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.container{
+    color: rgb(253, 252, 252);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: aqua;
+    height: 100vh;
+    width: 100%;
+    /* background-color: #FFC324; */
+    background-image: url(./raw-salmon-fillet-ingredients-cooking.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+.formdiv{
+    background-color:rgba(0, 0, 0,0.5 );
+    padding:20px 50px ;
+    width: 400px;
+    height: 550px;
+    border-radius: 10px;
+    /* text-align: center; */
+}
+label{
+    font-size: 20px;
+}
+input{
+    color: white;
+    margin-top: 10px;
+    font-size: 25px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    border:none;
+    border-bottom: 2px solid #FFC324;
+    background-color:rgba(0, 0, 0,0.5 ) ;
+    
+    
+}
+::placeholder{
+    color: rgb(255, 252, 252);
+    /* padding: 10px; */
+    font-size: 20px;
+    
+    
+   
+}
+h1{
+    text-align: center;
+    border-bottom: 2px solid #FFC324;
+    width: 50px;
+}
+/* button{
+    background-color: #FFC324;
+    font-size: 20px;
+    padding: 10px 60px;
+    border-color: #FFC324;
+    border-radius: 5px;
+    margin-left: 50px;
+    font-weight: bold;
+    
+} */
+a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow: 1px 1px rgb(7, 7, 7);
+}
+
+.aa{
+    text-align: center;
+
+}
+/* ----------------------------------------- */
+
+.formdiv button{
+    padding: 0px 0px ;
+    background-color:#FFC324;
+    /* background-color: #FFC324; */
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border: 1px solid rgb(10, 10, 10);
+    /* outline: 3px solid orange; */
+    /* outline-offset: -5px; */
+    /* position: relative;
+    overflow: hidden;
+    background: transparent; */
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width:195px ;
+    height: 45px;
+    border-radius: 100px;
+    border: none;
+    /* background-color: #fff; */
+    color: black;
+    
+}
+.ani{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    /* flex-wrap: wrap; */
+}
+/************************ button animation */
+.container1{
+    width: 200px ;
+    height: 50px;
+    background-color: #FFC324;
+    /* box-shadow: 0 60px 80px rgba(0,0,0,0.60), 0 45px 26px rgba(0,0,0,0.14); */
+    border-radius: 100px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    
+    /* margin-bottom: 20px; */
+    
+
+}
+
+.border{
+    width: 200px;
+    height: 20px;
+    background:linear-gradient(45deg,rgb(255, 0, 157),rgb(25, 0, 255));
+    animation-name: rotate;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-play-state: paused;
+
+}
+.container1:hover .border{
+    animation-play-state: running;
+}
+
+@keyframes rotate {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+    
+}
+
+@media screen and (min-width:300px) and (max-width:600px) {
+
+    .formdiv {
+        
+        padding: 10px 20px;
+        width: 320px;
+        height: 549px;
+        
+    }
+    
+    input {
+       
+        margin-top: 10px;
+        font-size: 21px;
+        
+    }
+}
